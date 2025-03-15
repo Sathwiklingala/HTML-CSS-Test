@@ -46,6 +46,20 @@
             justify-content: center;
         }
 
+        /* Task-5 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            max-width: 300px;
+        }
+
+        @media (max-width:600px;){
+            .gallery{
+                grid-template-columns: 1fr;
+            }
+        }
+
 
 
     </style>
@@ -78,6 +92,15 @@
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
     </nav>
+    <br><br>
+
+    <!--Task-5-->
+    <div class="gallery">
+        <img src="image1 (2).jpg" alt="Image 1" style="height: 150px; width: 150px;">
+        <img src="image2 (2).jpg" alt="Image 2" style="height: 150px; width: 150px;">
+        <img src="image3 (3).jpg" alt="Image 3" style="height: 150px; width: 150px;">
+        <img src="image4.jpg" alt="Image 4" style="height: 150px; width: 150px;">
+    </div>
 
     
 </body>
